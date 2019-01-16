@@ -1,11 +1,11 @@
-# 🕶 envhelper 🕶
+# 🕶 from-env 🕶
 
-envhelper is helper script that makes environment variables from a local ``.env``-file inside command line statements available.
+from-env is helper script that makes environment variables from a local ``.env``-file inside command line statements available.
 
 ## installation
 
 ```bash
-npm install envhelper
+npm install from-env
 ```
 
 ## usage
@@ -23,7 +23,7 @@ ENV5=gorge
 ```json
 {
     "scripts": {
-        "yo": "envhelper your-command --that %VARIABLE1 --needs %VARIABLE2 --some %VARIABLE3 --variables %VARIABLE1"
+        "yo": "your-command --that %VARIABLE1 --needs %VARIABLE2 --some %VARIABLE3 --variables %VARIABLE1"
     }
 }
 ```
@@ -32,7 +32,7 @@ ENV5=gorge
 ```json
 {
     "scripts": {
-        "yo": "envhelper your-command --that %VARIABLE1 --needs %VARIABLE2 --some %VARIABLE3 --variables %VARIABLE1"
+        "yo": "from-env your-command --that %VARIABLE1 --needs %VARIABLE2 --some %VARIABLE3 --variables %VARIABLE1"
     }
 }
 ```
