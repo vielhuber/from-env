@@ -1,6 +1,6 @@
 # 🕶 envhelper 🕶
 
-envhelper is helper script that makes environment variables from a local ``.env``-file inside command line statements available..
+envhelper is helper script that makes environment variables from a local ``.env``-file inside command line statements available.
 
 ## installation
 

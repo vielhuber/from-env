@@ -1,8 +1,8 @@
 {
-  "name": "envhelper",
-  "version": "1.0.2",
+  "name": "from-env",
+  "version": "1.0.4",
   "description": "",
-  "main": "envhelper.js",
+  "main": "index.js",
   "dependencies": {},
   "devDependencies": {},
   "scripts": {},
