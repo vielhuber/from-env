@@ -1,0 +1,11 @@
+{
+  "name": "envhelper",
+  "version": "1.0.2",
+  "description": "",
+  "main": "envhelper.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {},
+  "author": "",
+  "license": "ISC"
+}
