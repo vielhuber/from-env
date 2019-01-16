@@ -10,20 +10,18 @@ npm install from-env
 
 ## usage
 
-```.env``
+``.env``
 ```.env
-ENV1=foo
-ENV2=bar
-ENV3=baz
-ENV4=quux
-ENV5=gorge
+VARIABLE1=needs
+VARIABLE1=have
+VARIABLE1=variables
 ```
 
 ```package.json``` (before)
 ```json
 {
     "scripts": {
-        "yo": "your-command --that %VARIABLE1 --needs %VARIABLE2 --some %VARIABLE3 --variables %VARIABLE1"
+        "yo": "your-command --that needs --to have --some variables"
     }
 }
 ```
@@ -32,7 +30,7 @@ ENV5=gorge
 ```json
 {
     "scripts": {
-        "yo": "from-env your-command --that %VARIABLE1 --needs %VARIABLE2 --some %VARIABLE3 --variables %VARIABLE1"
+        "yo": "from-env your-command --that %VARIABLE1 --to %VARIABLE2 --some %VARIABLE3"
     }
 }
 ```
