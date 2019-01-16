@@ -13,8 +13,8 @@ npm install --save-dev from-env
 ``.env``
 ```.env
 VARIABLE1=needs
-VARIABLE1=have
-VARIABLE1=variables
+VARIABLE2=have
+VARIABLE3=variables
 ```
 
 ```package.json``` (before)
