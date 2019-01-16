@@ -1,11 +1,14 @@
 {
-  "name": "from-env",
-  "version": "1.0.9",
-  "description": "",
-  "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {},
-  "scripts": {},
-  "author": "",
-  "license": "ISC"
+    "name": "from-env",
+    "bin": {
+        "from-env": "bin/from-env.js"
+    },
+    "version": "1.1.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {},
+    "devDependencies": {},
+    "scripts": {},
+    "author": "",
+    "license": "ISC"
 }
