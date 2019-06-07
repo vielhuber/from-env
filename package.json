@@ -9,7 +9,8 @@
     "dependencies": {
         "cross-spawn": "^6.0.5",
         "dotenv": "^6.2.0",
-        "exit": "^0.1.2"
+        "exit": "^0.1.2",
+        "find-config": "^1.0.0"
     },
     "devDependencies": {},
     "scripts": {},
