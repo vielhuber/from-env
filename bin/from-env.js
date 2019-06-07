@@ -1,13 +1,25 @@
 #! /usr/bin/env node
+
+let env_file = '.env'
+if (process.env.FROM_ENV) {
+    env_file = process.env.FROM_ENV
+}
 const spawn = require('cross-spawn'),
     exit = require('exit');
 
 // determine diff
 const oldEnv = Object.assign({}, process.env);
-require('dotenv').config();
+require('dotenv').config({ path: require('find-config')(env_file) });
 const newEnv = Object.assign({}, process.env);
 
-let values = {};
+let values = newEnv;
+/* removed to support existing environment variables as well as .env
+Object.entries(newEnv).forEach(([newEnv__key, newEnv__value]) => {
+    if (!(newEnv__key in oldEnv)) {
+        values[newEnv__key] = newEnv__value;
+    }
+});
+*/
 Object.entries(newEnv).forEach(([newEnv__key, newEnv__value]) => {
     if (!(newEnv__key in oldEnv)) {
         values[newEnv__key] = newEnv__value;
