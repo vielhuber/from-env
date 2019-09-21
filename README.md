@@ -34,3 +34,16 @@ VARIABLE3=variables
     }
 }
 ```
+
+## alternative
+
+this also works without any package (also on windows with wsl):
+
+```package.json```
+```json
+{
+    "scripts": {
+        "yo": "from-env your-command --that $(grep VARIABLE1 .env | cut -d '=' -f2) --to $(grep VARIABLE2 .env | cut -d '=' -f2) --some $(grep VARIABLE3 .env | cut -d '=' -f2)"
+    }
+}
+```
