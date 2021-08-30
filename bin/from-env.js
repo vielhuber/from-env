@@ -11,8 +11,14 @@ let values = Object.assign({}, process.env);
 
 const args = process.argv.slice(2);
 args.forEach((args__value, args__key) => {
-    if (args__value[0] === '%' && args__value.substring(1) in values) {
-        args[args__key] = values[args__value.substring(1)];
+    let res = var_pattern.exec(args__value);
+    if (res && res.groups?.var in values) {
+        if (res[0][0] === '%') {
+            args[args__key] = values[args__value.substring(1)];
+        }
+        else {
+            args[args__key] = args[args__key].replace('%'+res.groups?.var, values[res.groups?.var]);
+        }
     }
 });
 
