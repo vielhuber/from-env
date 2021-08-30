@@ -9,6 +9,8 @@ const spawn = require('cross-spawn'),
 require('dotenv').config({ path: require('find-config')(env_file) });
 let values = Object.assign({}, process.env);
 
+let var_pattern = /(?:[A-z]+=)?%(?<var>[A-Z]+(?:_[A-Z]+)*)/;
+
 const args = process.argv.slice(2);
 args.forEach((args__value, args__key) => {
     let res = var_pattern.exec(args__value);
