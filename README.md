@@ -5,7 +5,7 @@ from-env is helper script that makes environment variables from a local ``.env``
 ## installation
 
 ```bash
-yarn add --dev https://github.com/krcm0209/from-env
+npm install --save-dev from-env
 ```
 
 ## usage
