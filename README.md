@@ -35,6 +35,23 @@ VARIABLE3=variables
 }
 ```
 
+### embedded variables replacement
+
+To enable replacing variables that are not standlone:
+
+`from-env --embedded-vars your-command --things thing1=%VARIABLE1 thing2=%VARIABLE2 --other $VARIABLE3`
+
+or
+
+`from-env your-command --things thing1=%VARIABLE1 thing2=%VARIABLE2 --other $VARIABLE3`
+
+with
+
+``.env``
+```.env
+FROM_ENV_EMBEDDED=true
+```
+
 ## alternative
 
 this also works without any package (also on windows with wsl):
