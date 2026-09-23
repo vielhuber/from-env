@@ -3,12 +3,12 @@
     "bin": {
         "from-env": "bin/from-env.js"
     },
-    "version": "1.1.4",
+    "version": "1.1.5",
     "description": "",
     "main": "index.js",
     "dependencies": {
-        "cross-spawn": "^6.0.5",
-        "dotenv": "^6.2.0",
+        "cross-spawn": "^7.0.6",
+        "dotenv": "^18.0.3",
         "exit": "^0.1.2",
         "find-config": "^1.0.0"
     },

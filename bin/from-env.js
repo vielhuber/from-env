@@ -6,7 +6,7 @@ if (process.env.FROM_ENV) {
 const spawn = require('cross-spawn'),
     exit = require('exit');
 
-require('dotenv').config({ path: require('find-config')(env_file) });
+require('dotenv').config({ path: require('find-config')(env_file), quiet: true });
 let values = Object.assign({}, process.env);
 
 // Pattern for matching embedded variables (variables that do not stand alone)
